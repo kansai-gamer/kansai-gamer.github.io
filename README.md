@@ -1,0 +1,1 @@
+# kansai-gamer.github.io
