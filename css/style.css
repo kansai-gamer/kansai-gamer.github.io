@@ -62,12 +62,6 @@ header h1 {
     padding: 5px 10px;
 }
 
-.language ol {
-    padding: 0;
-    margin: 0;
-    list-style: decimal inside;
-}
-
 .language li {
     border-bottom: 1px solid #ccc;
     width: 50%;
