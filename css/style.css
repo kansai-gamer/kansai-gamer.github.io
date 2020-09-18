@@ -92,3 +92,24 @@ table{
   table tr:nth-child(odd){
     background-color: #eee
   }
+
+  @media only screen and (max-width:600px){
+    .description img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 12px;
+    }
+    .description h1 {
+        font-size: 14px;
+    }
+    .language li {
+        float: none;
+        width: inherit;
+    }
+}
