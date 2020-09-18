@@ -107,8 +107,4 @@ table{
     .description h1 {
         font-size: 14px;
     }
-    .language li {
-        float: none;
-        width: inherit;
-    }
 }
