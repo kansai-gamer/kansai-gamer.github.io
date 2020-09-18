@@ -92,7 +92,6 @@ table{
   table tr:nth-child(odd){
     background-color: #eee
   }
-
   @media only screen and (max-width:600px){
     .description img {
         float: none;
