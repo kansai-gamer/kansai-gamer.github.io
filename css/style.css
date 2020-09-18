@@ -99,11 +99,6 @@ footer {
 }
 
 @media only screen and (max-width:600px){
-    .description img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
     header {
         padding: 5px;
     }
