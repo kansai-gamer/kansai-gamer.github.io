@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @import url(/css/sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
 
 body {
     background-color: #f0f0f0;
     padding: 10px;
     font-size: 14px;
     color: #666666;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .container {
@@ -90,3 +92,24 @@ table{
   table tr:nth-child(odd){
     background-color: #eee
   }
+
+footer {
+    text-align: center;
+    font-size: 80%;
+}
+
+@media only screen and (max-width:600px){
+    header {
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 12px;
+    }
+    .description h1 {
+        font-size: 14px;
+    }
+    .language li {
+        float: none;
+        width: inherit;
+    }
+}
