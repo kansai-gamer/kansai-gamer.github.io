@@ -1,17 +1,4 @@
-<?php
-$usertypestr = $_get[`usertypestr`]
-$arr1 = preg_split("//u", $str);
-
-$count = count($arr1);
-
-for($i = 0; $i < $count; $i++){
-    echo $arr1[$i] . "　";
-}
-echo "\n";
-?>
-
 <!DOCTYPE html>
-<!-- 未完成品 -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -22,9 +9,8 @@ echo "\n";
     <body>
 <h1> autospacekey</h1>
 <p>入力文字に自動で全角スペースを入れてくれるプログラム</p>
-<p>※まだ未完成なので動きません。</p>
-<p>文字を入力: <input type="usertype" name="usertypestr" value="Creeper"></p>
+<form action = "autospacekey.php" method = “get”>
+<p>文字を入力: <input type="text" name="usertypestr" value="Creeper"></p>
 <p><button type="submit">送信</button></p>
-<p><button type="reset">オールクリア</button></p>
 </body>
 </html>
