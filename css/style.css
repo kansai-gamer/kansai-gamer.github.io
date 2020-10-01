@@ -29,14 +29,6 @@ header h1 {
     text-align: center;
 }
 
-.infomation .type {
-    display: inline;
-    background-color: #E35A4D;
-    padding: 3px 5px;
-    font-size: 80%;
-    color: #FFF;
-}
-
 .description {
     clear: left;
 }
