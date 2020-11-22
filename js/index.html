@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>autospacekey</title>
+           <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>autospacekey</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <hr>
+    <div class="container">
+
+        <p>入力文字に自動で全角スペースを入れてくれるプログラム</p>
+        <p>Enterキーだと動作しません。実行ボタンを押せば動くのでしばらくはそっちで</p>
+        <p>日本語でもおｋ</p>
+        <p>文字を入力: <input type="text" id="text_name" value="Creeper"></p>
+        <input type="button" value="実行" onclick="autospace()">
+
+        
+        <h1 id="output">ここに表示される</h1>
+
+    </div>
+        <hr>
+        <div class="container">
+            <footer>
+                <p>&copy; <a href="https://github.com/kansai-gamer" target="_self">kansai-gamer</a></p>
+            </footer>
+        </div>
+    <script>
+        let display = [];
+            function autospace(){
+                let input = document.querySelector('input');
+                let kugiri = Array.from(input.value);
+
+
+                let output = [];
+                for (i = 0; i < kugiri.length; i++){
+                    output.push(kugiri[i] + ' ');
+                }
+                document.getElementById('output').innerHTML = output.join('');
+            }
+    </script>
+</body>
+</html>
+
+
+<!-- 参考元 
+https://www.sria.co.jp/blog/2017/09/javascript-array-display/
+https://gist.github.com/chikoski/4036650 -->
